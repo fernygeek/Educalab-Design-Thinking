@@ -3,102 +3,166 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Certificaciones online verificables | EducaLab.ec</title>
-<meta name="description" content="Certifícate online en Excel, programación, IA, seguridad laboral y más. Certificados con código QR verificable.">
+<title>Certificaciones online verificables con QR | EducaLab.ec</title>
+<meta name="description" content="Certifícate online en Excel, programación, IA, seguridad laboral y docencia. Certificados con código QR verificable, desde $80. Paga con tarjeta, transferencia o Payphone.">
+<meta name="theme-color" content="#C2501A">
+<!-- Open Graph: cómo se ve el enlace al compartirlo en redes y WhatsApp.
+     TODO: al publicar, cambia og:url y og:image por las URL absolutas de GitHub Pages. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+<meta property="og:site_name" content="EducaLab.ec">
+<meta property="og:title" content="Certifícate en semanas y demuéstralo con un código QR">
+<meta property="og:description" content="Certificaciones 100% online desde $80. Verificables por cualquier empleador en segundos.">
+<meta property="og:url" content="https://educalab.ec/">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Certificado de EducaLab.ec con código QR verificable">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2501A'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23fff' text-anchor='middle'%3EEL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="has-mbar">
-<div class="topbar"><div class="wrap"><div class="left"><a href="tel:+593978893727">Tel. +593 97 889 3727</a><a href="mailto:cursos@educalab.ec">cursos@educalab.ec</a></div><a href="login.html">Iniciar sesión o registrarse</a></div></div>
+<a class="skip" href="#main">Saltar al contenido</a>
+<aside class="topbar" aria-label="Contacto rápido"><div class="wrap"><div class="left">
+  <a href="tel:+593978893727"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>+593 97 889 3727</a>
+  <a href="mailto:cursos@educalab.ec"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 7.2L4 7.3V17h16V7.3z"/></svg>cursos@educalab.ec</a>
+</div><a href="login.html">Iniciar sesión</a></div></aside>
 <header class="site"><div class="wrap">
-  <a class="logo" href="index.html" aria-label="EducaLab.ec, inicio">EDUCA<span>LAB</span><small>.EC</small></a>
-  <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <a class="logo" href="index.html" aria-label="EducaLab.ec, inicio"><svg class="cap" viewBox="0 0 52 14" aria-hidden="true"><path d="M26 0 52 7 26 14 0 7z" fill="#333"/></svg><span class="lt">EDUCA<span>LAB</span><small>.EC</small></span></a>
+  <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   <nav class="main" id="menu" aria-label="Principal"><ul>
-    <li><a href="index.html" aria-current="page">Certifícate</a></li>
-    <li><a href="index.html#certificaciones">Cursos</a></li>
-    <li><a href="index.html#verificar">Verificar certificado</a></li>
-    <li><a href="index.html#preguntas">Preguntas</a></li>
-    <li><a class="btn btn-primary btn-sm" href="index.html#certificaciones">Inscribirme</a></li>
+    <li><a href="#certificaciones">Certificaciones</a></li>
+    <li><a href="#verificar">Verificar certificado</a></li>
+    <li><a href="#preguntas">Preguntas</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a class="btn btn-primary btn-sm" href="#certificaciones">Inscribirme</a></li>
   </ul></nav>
 </div></header>
-<main>
+
+<main id="main" tabindex="-1">
+<!-- ATENCIÓN -->
 <section class="hero"><div class="wrap">
   <div>
     <span class="pill">Certificaciones profesionales 100% online</span>
     <h1>Certifícate en semanas y demuéstralo con un código QR</h1>
-    <p class="lead">Cursos prácticos para profesionales en Ecuador. Al terminar recibes un certificado digital que cualquier empleador puede verificar en segundos.</p>
-    <div class="ctas"><a class="btn btn-primary" href="#certificaciones">Ver certificaciones</a><a class="btn btn-wa" data-wa href="#">Hablar con un asesor</a></div>
+    <p class="lead">Cursos prácticos para profesionales en Ecuador. Al terminar recibes un certificado digital con horas académicas que cualquier empleador o institución puede verificar en segundos.</p>
+    <div class="ctas"><a class="btn btn-primary" href="#certificaciones">Ver certificaciones</a><a class="btn btn-wa" data-wa="Hola EducaLab, quiero hablar con un asesor sobre las certificaciones." href="#">Hablar con un asesor</a></div>
+    <p class="micro"><strong>Desde $80, pago único.</strong> Tarjeta, transferencia o Payphone · Factura electrónica</p>
   </div>
-  <figure class="cert" aria-label="Ejemplo de certificado">
+  <figure class="cert" aria-labelledby="cert-cap">
+    <figcaption id="cert-cap">CERTIFICADO DE MUESTRA</figcaption>
     <div class="kind">CERTIFICADO DE APROBACIÓN</div>
-    <h3>Excel aplicado a negocios</h3>
+    <p class="ctitle">Excel aplicado a negocios</p>
     <div class="to">otorgado a</div>
     <div class="name">Andrea Morales</div>
     <div class="hrs">40 horas académicas, modalidad online</div>
-    <div class="bottom"><div><b>Código EDL-2026-0481</b><br>Verifícalo en esta página</div><svg class="qr" viewBox="0 0 72 72" role="img" aria-label="Código QR de verificación"><rect width="72" height="72" fill="#fff"/><g fill="#1B1B1B"><rect x="0" y="0" width="8" height="8"/><rect x="8" y="0" width="8" height="8"/><rect x="16" y="0" width="8" height="8"/><rect x="24" y="0" width="8" height="8"/><rect x="32" y="0" width="8" height="8"/><rect x="48" y="0" width="8" height="8"/><rect x="56" y="0" width="8" height="8"/><rect x="64" y="0" width="8" height="8"/><rect x="0" y="8" width="8" height="8"/><rect x="8" y="8" width="8" height="8"/><rect x="16" y="8" width="8" height="8"/><rect x="24" y="8" width="8" height="8"/><rect x="40" y="8" width="8" height="8"/><rect x="48" y="8" width="8" height="8"/><rect x="56" y="8" width="8" height="8"/><rect x="64" y="8" width="8" height="8"/><rect x="0" y="16" width="8" height="8"/><rect x="8" y="16" width="8" height="8"/><rect x="16" y="16" width="8" height="8"/><rect x="24" y="16" width="8" height="8"/><rect x="40" y="16" width="8" height="8"/><rect x="48" y="16" width="8" height="8"/><rect x="56" y="16" width="8" height="8"/><rect x="64" y="16" width="8" height="8"/><rect x="0" y="24" width="8" height="8"/><rect x="8" y="24" width="8" height="8"/><rect x="16" y="24" width="8" height="8"/><rect x="24" y="24" width="8" height="8"/><rect x="40" y="24" width="8" height="8"/><rect x="48" y="24" width="8" height="8"/><rect x="8" y="32" width="8" height="8"/><rect x="24" y="32" width="8" height="8"/><rect x="40" y="32" width="8" height="8"/><rect x="48" y="32" width="8" height="8"/><rect x="56" y="32" width="8" height="8"/><rect x="64" y="32" width="8" height="8"/><rect x="8" y="40" width="8" height="8"/><rect x="32" y="40" width="8" height="8"/><rect x="48" y="40" width="8" height="8"/><rect x="56" y="40" width="8" height="8"/><rect x="64" y="40" width="8" height="8"/><rect x="0" y="48" width="8" height="8"/><rect x="8" y="48" width="8" height="8"/><rect x="16" y="48" width="8" height="8"/><rect x="32" y="48" width="8" height="8"/><rect x="40" y="48" width="8" height="8"/><rect x="56" y="48" width="8" height="8"/><rect x="64" y="48" width="8" height="8"/><rect x="0" y="56" width="8" height="8"/><rect x="8" y="56" width="8" height="8"/><rect x="16" y="56" width="8" height="8"/><rect x="40" y="56" width="8" height="8"/><rect x="0" y="64" width="8" height="8"/><rect x="8" y="64" width="8" height="8"/><rect x="16" y="64" width="8" height="8"/><rect x="32" y="64" width="8" height="8"/><rect x="48" y="64" width="8" height="8"/><rect x="56" y="64" width="8" height="8"/></g></svg></div>
+    <div class="bottom"><div><b>Código EDL-2026-0481</b><br><a class="link" href="#verificar">Verifícalo aquí</a></div><svg class="qr" viewBox="0 0 72 72" role="img" aria-label="Código QR de verificación"><rect width="72" height="72" fill="#fff"/><g fill="#1B1B1B"><rect x="0" y="0" width="8" height="8"/><rect x="8" y="0" width="8" height="8"/><rect x="16" y="0" width="8" height="8"/><rect x="24" y="0" width="8" height="8"/><rect x="32" y="0" width="8" height="8"/><rect x="48" y="0" width="8" height="8"/><rect x="56" y="0" width="8" height="8"/><rect x="64" y="0" width="8" height="8"/><rect x="0" y="8" width="8" height="8"/><rect x="8" y="8" width="8" height="8"/><rect x="16" y="8" width="8" height="8"/><rect x="24" y="8" width="8" height="8"/><rect x="40" y="8" width="8" height="8"/><rect x="48" y="8" width="8" height="8"/><rect x="56" y="8" width="8" height="8"/><rect x="64" y="8" width="8" height="8"/><rect x="0" y="16" width="8" height="8"/><rect x="8" y="16" width="8" height="8"/><rect x="16" y="16" width="8" height="8"/><rect x="24" y="16" width="8" height="8"/><rect x="40" y="16" width="8" height="8"/><rect x="48" y="16" width="8" height="8"/><rect x="56" y="16" width="8" height="8"/><rect x="64" y="16" width="8" height="8"/><rect x="0" y="24" width="8" height="8"/><rect x="8" y="24" width="8" height="8"/><rect x="16" y="24" width="8" height="8"/><rect x="24" y="24" width="8" height="8"/><rect x="40" y="24" width="8" height="8"/><rect x="48" y="24" width="8" height="8"/><rect x="8" y="32" width="8" height="8"/><rect x="24" y="32" width="8" height="8"/><rect x="40" y="32" width="8" height="8"/><rect x="48" y="32" width="8" height="8"/><rect x="56" y="32" width="8" height="8"/><rect x="64" y="32" width="8" height="8"/><rect x="8" y="40" width="8" height="8"/><rect x="32" y="40" width="8" height="8"/><rect x="48" y="40" width="8" height="8"/><rect x="56" y="40" width="8" height="8"/><rect x="64" y="40" width="8" height="8"/><rect x="0" y="48" width="8" height="8"/><rect x="8" y="48" width="8" height="8"/><rect x="16" y="48" width="8" height="8"/><rect x="32" y="48" width="8" height="8"/><rect x="40" y="48" width="8" height="8"/><rect x="56" y="48" width="8" height="8"/><rect x="64" y="48" width="8" height="8"/><rect x="0" y="56" width="8" height="8"/><rect x="8" y="56" width="8" height="8"/><rect x="16" y="56" width="8" height="8"/><rect x="40" y="56" width="8" height="8"/><rect x="0" y="64" width="8" height="8"/><rect x="8" y="64" width="8" height="8"/><rect x="16" y="64" width="8" height="8"/><rect x="32" y="64" width="8" height="8"/><rect x="48" y="64" width="8" height="8"/><rect x="56" y="64" width="8" height="8"/></g></svg></div>
   </figure>
 </div></section>
 
+<!-- INTERÉS -->
 <section class="trust" aria-label="Por qué EducaLab"><ul class="wrap">
-  <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Certificado verificable con QR</li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Estudia a tu ritmo</li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Docentes con experiencia</li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Pago con tarjeta o transferencia</li>
+  <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Certificado verificable con QR</li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Estudia a tu ritmo, 100% online</li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Tarjeta, transferencia o Payphone</li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8662A"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Factura electrónica</li>
 </ul></section>
 
 <section class="block" id="certificaciones"><div class="wrap">
-  <div class="sec-head"><h2>Elige tu certificación</h2><p>Precio, duración y modalidad claros antes de comprar.</p></div>
+  <div class="sec-head"><h2>Elige tu certificación</h2><p>Precio, duración y modalidad claros antes de comprar. No necesitas crear una cuenta para ver los precios.</p></div>
   <div class="filters" role="group" aria-label="Filtrar por área">
-    <button class="chip" aria-pressed="true" data-cat="todas">Todas</button>
-    <button class="chip" aria-pressed="false" data-cat="tecnologia">Tecnología</button>
-    <button class="chip" aria-pressed="false" data-cat="negocios">Negocios</button>
-    <button class="chip" aria-pressed="false" data-cat="seguridad">Seguridad y salud</button>
-    <button class="chip" aria-pressed="false" data-cat="docencia">Docencia</button>
+    <button class="chip" type="button" aria-pressed="true" data-cat="todas">Todas</button>
+    <button class="chip" type="button" aria-pressed="false" data-cat="tecnologia">Tecnología</button>
+    <button class="chip" type="button" aria-pressed="false" data-cat="negocios">Negocios</button>
+    <button class="chip" type="button" aria-pressed="false" data-cat="seguridad">Seguridad y salud</button>
+    <button class="chip" type="button" aria-pressed="false" data-cat="docencia">Docencia</button>
   </div>
-  <div class="grid" id="grid" aria-live="polite"></div>
-  <p class="empty" id="empty">No hay certificaciones en esta área por ahora. Prueba con “Todas”.</p>
+  <p class="count" id="count" role="status"></p>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>No hay certificaciones en esta área por ahora. <button class="linkbtn link" id="empty-reset" type="button">Ver todas</button></p>
 </div></section>
 
+<section class="block" style="padding-top:0" aria-labelledby="how-h"><div class="wrap">
+  <div class="sec-head"><h2 id="how-h">Así te certificas</h2><p>Tres pasos, sin trámites presenciales.</p></div>
+  <ol class="how">
+    <li><h3>Elige e inscríbete</h3><p>Escoge tu certificación, llena tus datos y paga en línea. Tu cuenta se crea con la inscripción.</p></li>
+    <li><h3>Estudia a tu ritmo</h3><p>Accede al aula virtual desde el celular o la computadora, dentro de las semanas indicadas.</p></li>
+    <li><h3>Recibe tu certificado</h3><p>Al aprobar, descargas tu certificado con horas académicas y un código QR verificable.</p></li>
+  </ol>
+</div></section>
+
+<!-- DESEO -->
 <section class="block verify" id="verificar"><div class="wrap">
-  <div class="sec-head" style="margin:0"><h2>Verifica cualquier certificado en 5 segundos</h2><p>Escribe el código que aparece junto al QR. Sirve para empleadores, concursos públicos y procesos de selección.</p></div>
+  <div class="sec-head"><h2>Verifica cualquier certificado en 5 segundos</h2><p>Escribe el código que aparece junto al QR. Sirve para empleadores, concursos públicos y procesos de selección.</p></div>
   <div class="vbox">
     <form class="vform" id="verify-form" novalidate>
       <label class="sr-only" for="code">Código del certificado</label>
-      <input class="input" id="code" placeholder="Ej. EDL-2026-0481" autocomplete="off">
+      <input class="input" id="code" placeholder="Ej. EDL-2026-0481" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="code-hint">
       <button class="btn btn-primary" type="submit">Verificar</button>
     </form>
-    <div class="result" id="verify-result" role="status"></div>
-    <p class="hint">Prueba con EDL-2026-0481 (código de demostración).</p>
+    <div class="result" id="verify-result" role="status" aria-live="polite"></div>
+    <p class="hint" id="code-hint">Prueba con <code>EDL-2026-0481</code> (código de demostración). No importan mayúsculas ni guiones.</p>
   </div>
 </div></section>
 
-<section class="block"><div class="wrap">
-  <div class="sec-head"><h2>Lo que dicen nuestros estudiantes</h2><p>Opiniones reales, con nombre y cargo.</p></div>
+<section class="block" aria-labelledby="test-h"><div class="wrap">
+  <div class="sec-head"><h2 id="test-h">Lo que dicen nuestros estudiantes</h2><p>Solo publicamos opiniones de estudiantes reales.</p></div>
   <div class="tgrid">
-    <blockquote class="t"><div class="who"><div class="av" style="background:#E8662A">RS</div><div><cite>Rafaela Silva</cite><small>Estudiante de EducaLab</small></div></div><p>“Me gustó el diseño del Data Warehouse para poder implementar mi proyecto.”</p></blockquote>
-    <blockquote class="t pending"><div class="who"><div class="av" style="background:#9A9A9A">?</div><div><cite>Testimonio por recolectar</cite><small>Nombre, cargo y ciudad</small></div></div><p>Pedir a un estudiante certificado qué logró gracias al certificado.</p></blockquote>
-    <blockquote class="t pending"><div class="who"><div class="av" style="background:#9A9A9A">?</div><div><cite>Testimonio por recolectar</cite><small>Nombre, cargo y ciudad</small></div></div><p>Pedir a un estudiante su experiencia con la plataforma y el soporte.</p></blockquote>
+    <blockquote class="t"><span class="badge real">Estudiante verificada</span><div class="who"><div class="av" style="background:#B04816" aria-hidden="true">RS</div><div><cite>Rafaela Silva</cite><small>Estudiante de EducaLab</small></div></div><p>“Me gustó el diseño del Data Warehouse para poder implementar mi proyecto.”</p></blockquote>
+    <blockquote class="t pending"><span class="badge">Por recolectar</span><div class="who"><div class="av" style="background:#6B6B6B" aria-hidden="true">?</div><div><cite>Testimonio por recolectar</cite><small>Nombre, cargo y ciudad</small></div></div><p>Pedir a un estudiante certificado qué logró gracias al certificado.</p></blockquote>
+    <blockquote class="t pending"><span class="badge">Por recolectar</span><div class="who"><div class="av" style="background:#6B6B6B" aria-hidden="true">?</div><div><cite>Testimonio por recolectar</cite><small>Nombre, cargo y ciudad</small></div></div><p>Pedir a un estudiante su experiencia con la plataforma y el soporte.</p></blockquote>
   </div>
 </div></section>
 
 <section class="block" id="preguntas" style="padding-top:0"><div class="wrap">
-  <div class="sec-head"><h2>Preguntas frecuentes</h2><p>Lo que todos preguntan antes de pagar.</p></div>
+  <div class="sec-head"><h2>Preguntas frecuentes</h2><p>Lo que todos preguntan antes de pagar. ¿Otra duda? <a class="link" data-wa href="#">Pregúntanos por WhatsApp</a>.</p></div>
   <div class="faq">
     <details><summary>¿El certificado sirve para concursos públicos?</summary><p>Cada certificado indica horas académicas y un código verificable. Confirma con la institución convocante qué requisitos pide.</p></details>
+    <details><summary>¿Cómo verifica un empleador mi certificado?</summary><p>Escanea el QR o escribe el código en la sección «Verificar certificado» de esta página. Verá tu nombre, la certificación, las horas y la fecha.</p></details>
     <details><summary>¿Cuánto tiempo tengo para terminar?</summary><p>Cada curso indica su duración sugerida en semanas. Avanzas a tu ritmo dentro de ese periodo.</p></details>
-    <details><summary>¿Qué métodos de pago aceptan?</summary><p>Tarjeta de crédito o débito, transferencia bancaria y Payphone.</p></details>
-    <details><summary>¿Puedo pedir factura electrónica?</summary><p>Sí. Ingresa tus datos de facturación al inscribirte y la recibirás en tu correo.</p></details>
+    <details><summary>¿Necesito crear una cuenta antes de pagar?</summary><p>No. Tu cuenta se crea con la inscripción y recibes los datos de acceso en tu correo.</p></details>
+    <details><summary>¿Qué métodos de pago aceptan?</summary><p>Tarjeta de crédito o débito, transferencia bancaria y Payphone. Todos los precios están en dólares.</p></details>
+    <details><summary>¿Puedo pedir factura electrónica?</summary><p>Sí. Se emite con tu nombre y cédula, o con tu RUC si lo indicas al inscribirte, y la recibes en tu correo.</p></details>
   </div>
 </div></section>
 
+<!-- ACCIÓN -->
 <section class="cta"><h2>¿Listo para certificarte?</h2><p>Inscríbete hoy y empieza en minutos.</p><a class="btn btn-light" href="#certificaciones">Elegir mi certificación</a></section>
+
+<section class="block contact" id="contacto" aria-labelledby="contact-h"><div class="wrap">
+  <div>
+    <div class="sec-head"><h2 id="contact-h">Contacto</h2><p>La forma más rápida es WhatsApp. También puedes llamarnos o escribirnos.</p></div>
+    <ul class="clist">
+      <li><span class="cic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#B04816" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></span><div><b>WhatsApp</b><a data-wa href="#">Escríbenos ahora</a></div></li>
+      <li><span class="cic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#B04816" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span><div><b>Teléfono</b><a href="tel:+593978893727">+593 97 889 3727</a></div></li>
+      <li><span class="cic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#B04816" d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 7.2L4 7.3V17h16V7.3z"/></svg></span><div><b>Correo</b><a href="mailto:cursos@educalab.ec">cursos@educalab.ec</a></div></li>
+      <li><span class="cic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#B04816" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span><div><b>Ubicación</b>Quito, Ecuador</div></li>
+    </ul>
+  </div>
+  <form class="panel" id="contact-form" novalidate aria-labelledby="cf-h">
+    <h3 id="cf-h" style="font-size:20px;margin-bottom:4px">Envíanos un mensaje</h3>
+    <p class="req-note">Los campos con <span class="req" aria-hidden="true">*</span> son obligatorios.</p>
+    <div class="field"><label for="c-name">Nombre <span class="req" aria-hidden="true">*</span></label><input class="input" id="c-name" autocomplete="name" required><p class="err"></p></div>
+    <div class="two">
+      <div class="field"><label for="c-email">Correo electrónico <span class="req" aria-hidden="true">*</span></label><input class="input" id="c-email" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required><p class="err"></p></div>
+      <div class="field"><label for="c-phone">Celular (opcional)</label><input class="input" id="c-phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="0991234567"><p class="err"></p></div>
+    </div>
+    <div class="field"><label for="c-msg">Mensaje <span class="req" aria-hidden="true">*</span></label><textarea class="input" id="c-msg" rows="4" required placeholder="Ej. ¿El curso de Riesgos laborales tiene clases en vivo?"></textarea><p class="err"></p></div>
+    <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+    <div class="result" id="contact-result" role="status" aria-live="polite"></div>
+  </form>
+</div></section>
 </main>
-<div class="mbar"><a class="btn btn-primary" href="#certificaciones">Inscribirme</a><a class="btn btn-wa" data-wa href="#">WhatsApp</a></div>
+
+<aside class="mbar" aria-label="Acciones rápidas"><a class="btn btn-primary" href="#certificaciones">Inscribirme</a><a class="btn btn-wa" data-wa href="#">WhatsApp</a></aside>
 <footer class="site"><div class="wrap">
-  <div><h4>EducaLab.ec</h4><ul><li>Quito, Ecuador</li><li><a href="tel:+593978893727">+593 97 889 3727</a></li><li><a href="mailto:cursos@educalab.ec">cursos@educalab.ec</a></li></ul></div>
-  <div><h4>Certificaciones</h4><ul><li><a href="inscripcion.html?curso=excel">Excel aplicado a negocios</a></li><li><a href="inscripcion.html?curso=web">Diseño y programación web</a></li><li><a href="inscripcion.html?curso=riesgos">Riesgos laborales</a></li></ul></div>
-  <div><h4>Empresa</h4><ul><li><a href="#">¿Quiénes somos?</a></li><li><a href="#">Condiciones</a></li><li><a href="#">Política de privacidad</a></li></ul></div>
-  <div><h4>Ayuda</h4><ul><li><a data-wa href="#">Escríbenos por WhatsApp</a></li><li><a href="index.html#verificar">Verificar un certificado</a></li></ul></div>
-</div><p class="copy">Prototipo académico de HCI, EPN. <span id="year"></span></p></footer>
-<a class="fab" data-wa href="#" aria-label="Escribir por WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+  <div><h2 class="fh">EducaLab.ec</h2><ul><li>Quito, Ecuador</li><li><a href="tel:+593978893727">+593 97 889 3727</a></li><li><a href="mailto:cursos@educalab.ec">cursos@educalab.ec</a></li></ul></div>
+  <div><h2 class="fh">Certificaciones</h2><ul><li><a href="inscripcion.html?curso=excel">Excel aplicado a negocios</a></li><li><a href="inscripcion.html?curso=web">Diseño y programación web</a></li><li><a href="inscripcion.html?curso=riesgos">Riesgos laborales</a></li><li><a href="index.html#certificaciones">Ver todas</a></li></ul></div>
+  <div><h2 class="fh">Legal</h2><ul><li><a href="legal.html#condiciones">Condiciones de compra</a></li><li><a href="legal.html#privacidad">Política de privacidad</a></li><li><a href="legal.html#pagos">Pagos y facturación</a></li></ul></div>
+  <div><h2 class="fh">Ayuda</h2><ul><li><a data-wa href="#">Escríbenos por WhatsApp</a></li><li><a href="index.html#verificar">Verificar un certificado</a></li><li><a href="index.html#preguntas">Preguntas frecuentes</a></li></ul></div>
+</div><p class="copy">Prototipo académico de Interacción Humano-Computador, EPN. <span id="year"></span></p></footer>
+<aside class="quick" aria-label="Atajos"><button class="totop" type="button" aria-label="Volver arriba"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<a class="fab" data-wa href="#" aria-label="Escribir por WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a></aside>
 <script src="assets/app.js"></script>
 </body></html>
