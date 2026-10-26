@@ -13,8 +13,14 @@ La auditoría del sitio actual y la aplicación de las 10 heurísticas de Nielse
 | `index.html` | Landing que sigue el embudo AIDA. **Atención:** hero con certificado de muestra y QR. **Interés:** barra de confianza, catálogo filtrable y «Así te certificas». **Deseo:** verificador de certificados, testimonios y preguntas frecuentes. **Acción:** CTA final, contacto, botón flotante de WhatsApp y barra fija en móvil. |
 | `inscripcion.html?curso=<id>` | Inscripción en 3 pasos: datos con validación, pago con un formulario para cada método (tarjeta, transferencia o Payphone), cupón y confirmación. **El pago es simulado.** |
 | `login.html` | Inicio de sesión corregido: textos con tildes, Google como primera opción, opción para mostrar la contraseña y reCAPTCHA (simulado) solo tras 3 intentos fallidos. |
-| `legal.html` | Condiciones, privacidad, pagos y facturación. Es un **borrador** que EducaLab debe validar. |
-| `assets/styles.css` | Estilos y diseño responsive (de 360 a 1440 px). |
+| `legal.html` | Condiciones de compra, privacidad, pagos y facturación (borrador), más los **Términos y condiciones** y la **Política de seguridad** reales de educalab.ec. |
+| `cursos.html` | Lista de cursos: las 7 áreas y los 26 cursos del sitio real. Los que tienen inscripción en línea enlazan al pago. |
+| `instructores.html` | Los 5 instructores del sitio real con su especialidad. |
+| `servicios.html` | Diseño de páginas web, aulas virtuales, tiendas virtuales y consultorías BI. |
+| `contacto.html` | Canales de contacto y formulario. |
+| `nosotros.html` | ¿Quiénes somos?, con textos del sitio real (pendiente de validar). |
+| `assets/styles.css` | Estilos y diseño responsive (de 360 a 1440 px). El estilo visual viene del diseño de Figma Make: ver `referencia/GUIA-VISUAL.md`. |
+| `assets/img/` | Foto del hero, foto del login y portadas de cursos, en WebP optimizado. |
 | `assets/app.js` | Datos (`CONTACT`, `COURSES`, `CERTS`, `COUPONS`) y toda la interacción. |
 | `assets/og-image.png` | Imagen de 1200×630 para compartir en redes y WhatsApp. |
 
