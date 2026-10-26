@@ -4,81 +4,157 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inscripción | EducaLab.ec</title>
-<meta name="description" content="Inscríbete en tu certificación en tres pasos.">
+<meta name="description" content="Inscríbete en tu certificación de EducaLab.ec en tres pasos: elige, completa tus datos y paga con tarjeta, transferencia o Payphone.">
+<meta name="theme-color" content="#C2501A">
+<!-- TODO: al publicar, cambia og:url y og:image por las URL absolutas de GitHub Pages. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+<meta property="og:site_name" content="EducaLab.ec">
+<meta property="og:title" content="Inscríbete en tu certificación | EducaLab.ec">
+<meta property="og:description" content="Tres pasos, pago con tarjeta, transferencia o Payphone y factura electrónica.">
+<meta property="og:url" content="https://educalab.ec/inscripcion.html">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2501A'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23fff' text-anchor='middle'%3EEL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head><body>
-<div class="topbar"><div class="wrap"><div class="left"><a href="tel:+593978893727">Tel. +593 97 889 3727</a><a href="mailto:cursos@educalab.ec">cursos@educalab.ec</a></div><a href="login.html">Iniciar sesión o registrarse</a></div></div>
+<a class="skip" href="#main">Saltar al contenido</a>
+<aside class="topbar" aria-label="Contacto rápido"><div class="wrap"><div class="left">
+  <a href="tel:+593978893727"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>+593 97 889 3727</a>
+  <a href="mailto:cursos@educalab.ec"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 7.2L4 7.3V17h16V7.3z"/></svg>cursos@educalab.ec</a>
+</div><a href="login.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z"/></svg>Iniciar sesión</a></div></aside>
 <header class="site"><div class="wrap">
-  <a class="logo" href="index.html" aria-label="EducaLab.ec, inicio">EDUCA<span>LAB</span><small>.EC</small></a>
-  <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <a class="logo" href="index.html" aria-label="EducaLab.ec, inicio"><svg class="cap" viewBox="0 0 52 14" aria-hidden="true"><path d="M26 0 52 7 26 14 0 7z" fill="#333"/></svg><span class="lt">EDUCA<span>LAB</span><small>.EC</small></span></a>
+  <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   <nav class="main" id="menu" aria-label="Principal"><ul>
-    <li><a href="index.html">Certifícate</a></li>
-    <li><a href="index.html#certificaciones">Cursos</a></li>
-    <li><a href="index.html#verificar">Verificar certificado</a></li>
-    <li><a href="index.html#preguntas">Preguntas</a></li>
-    <li><a class="btn btn-primary btn-sm" href="index.html#certificaciones">Inscribirme</a></li>
+    <li><a href="index.html">Inicio</a></li>
+    <li class="has-sub"><a href="index.html#certificaciones">Certifícate</a><ul class="sub">
+      <li><a href="index.html#certificaciones">Certificaciones</a></li>
+      <li><a href="index.html#verificar">Verificar certificado</a></li>
+      <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+    </ul></li>
+    <li class="has-sub"><a href="cursos.html">Cursos</a><ul class="sub">
+      <li><a href="cursos.html">Lista de cursos</a></li>
+      <li><a href="instructores.html">Instructores</a></li>
+    </ul></li>
+    <li class="has-sub"><a href="servicios.html">Servicios</a><ul class="sub">
+      <li><a href="servicios.html#paginas-web">Diseño de páginas web</a></li>
+      <li><a href="servicios.html#aulas-virtuales">Diseño de aulas virtuales</a></li>
+      <li><a href="servicios.html#tienda-virtual">Diseño de tu tienda virtual</a></li>
+      <li><a href="servicios.html#consultoria-bi">Consultorías BI - Inteligencia de negocios</a></li>
+    </ul></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a class="btn btn-primary btn-sm arrow" href="index.html#certificaciones">Inscribirme</a></li>
   </ul></nav>
 </div></header>
-<main class="wrap" id="checkout" style="padding:40px 24px 80px">
-  <h1 id="co-title" style="font-size:clamp(24px,3vw,32px)">Inscripción</h1>
+
+<main class="wrap page" id="main" tabindex="-1">
+  <div id="checkout">
+  <h1>Inscripción: <span id="co-course"></span></h1>
+  <p class="notice" id="co-notice" hidden>No encontramos la certificación del enlace, así que elegimos «Excel aplicado a negocios». Puedes cambiarla en el resumen.</p>
   <ol class="steps" aria-label="Progreso de la inscripción">
-    <li><span class="n">1</span>Elegir certificación</li><span class="bar" aria-hidden="true"></span>
-    <li><span class="n">2</span>Tus datos</li><span class="bar" aria-hidden="true"></span>
+    <li><span class="n">1</span><button class="linkbtn" id="step1-btn" type="button">Elegir certificación</button></li><li class="bar" aria-hidden="true"></li>
+    <li><span class="n">2</span>Tus datos</li><li class="bar" aria-hidden="true"></li>
     <li><span class="n">3</span>Pago</li>
   </ol>
   <div class="co">
     <div>
-      <section class="panel" data-step="2">
-        <h2>Tus datos</h2><p class="sub">Así aparecerá tu nombre en el certificado.</p>
-        <div class="field"><label for="f-name">Nombres y apellidos completos</label><input class="input" id="f-name" type="text" placeholder="Ej. Andrea Morales" autocomplete="name"><p class="err" role="alert"></p></div>
-        <div class="field"><label for="f-cedula">Cédula</label><input class="input" id="f-cedula" type="text" placeholder="10 dígitos" inputmode="numeric" maxlength="10"><p class="err" role="alert"></p></div>
-        <div class="field"><label for="f-email">Correo electrónico</label><input class="input" id="f-email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email"><p class="err" role="alert"></p></div>
-        <div class="field"><label for="f-phone">Celular (WhatsApp)</label><input class="input" id="f-phone" type="tel" placeholder="09X XXX XXXX" autocomplete="tel"><p class="err" role="alert"></p></div>
-        <p style="font-weight:600;font-size:14px;margin-bottom:8px">¿Cómo quieres pagar?</p>
-        <div class="pick" role="radiogroup">
-          <input type="radio" name="pay" id="p-card" value="card" checked><label for="p-card">Tarjeta</label>
-          <input type="radio" name="pay" id="p-transfer" value="transfer"><label for="p-transfer">Transferencia</label>
-          <input type="radio" name="pay" id="p-payphone" value="payphone"><label for="p-payphone">Payphone</label>
+      <!-- Paso 2 -->
+      <form class="panel" data-step="2" id="data-form" novalidate>
+        <h2 tabindex="-1">Tus datos</h2><p class="sub">Así aparecerá tu nombre en el certificado. Todos los campos son obligatorios.</p>
+        <div class="field"><label for="f-name">Nombres y apellidos completos</label><input class="input" id="f-name" type="text" placeholder="Ej. Andrea Morales Pérez" autocomplete="name" required><p class="help">Escríbelo con tildes y mayúsculas, tal como quieres verlo en el certificado.</p><p class="err"></p></div>
+        <div class="two">
+          <div class="field"><label for="f-cedula">Cédula</label><input class="input" id="f-cedula" type="text" placeholder="10 dígitos" inputmode="numeric" maxlength="10" autocomplete="off" required><p class="err"></p></div>
+          <div class="field"><label for="f-phone">Celular (WhatsApp)</label><input class="input" id="f-phone" type="tel" placeholder="0991234567" autocomplete="tel-national" inputmode="tel" required><p class="err"></p></div>
         </div>
-        <div class="actions"><button class="btn btn-outline" id="back-1" type="button">Volver al catálogo</button><button class="btn btn-primary" id="to-pay" type="button">Continuar al pago</button></div>
-      </section>
-      <section class="panel" data-step="3" hidden>
-        <h2>Pago</h2><p class="sub">Total a pagar: <strong id="pay-total"></strong></p>
-        <div data-method="card"><div class="field"><label for="f-card">Número de tarjeta</label><input class="input" id="f-card" type="text" placeholder="0000 0000 0000 0000" inputmode="numeric"><p class="err" role="alert"></p></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="field"><label for="f-exp">Vence</label><input class="input" id="f-exp" type="text" placeholder="MM/AA" ><p class="err" role="alert"></p></div><div class="field"><label for="f-cvv">CVV</label><input class="input" id="f-cvv" type="text" placeholder="123" inputmode="numeric" maxlength="4"><p class="err" role="alert"></p></div></div></div>
-        <div data-method="transfer" hidden><p>Transfiere el valor a la cuenta de EducaLab y envía el comprobante por WhatsApp. Los datos bancarios se muestran aquí en la versión final.</p></div>
-        <div data-method="payphone" hidden><p>Al confirmar te enviaremos un enlace de pago de Payphone a tu celular.</p></div>
-        <p class="hint">Prototipo: no se procesa ningún pago real.</p>
-        <div class="actions"><button class="btn btn-outline" id="back-2" type="button">Volver a mis datos</button><button class="btn btn-primary" id="confirm" type="button">Confirmar y pagar</button></div>
-      </section>
-      <section class="panel done-box" data-step="4" hidden>
+        <div class="field"><label for="f-email">Correo electrónico</label><input class="input" id="f-email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required><p class="help">Aquí enviamos tu acceso al aula y la factura.</p><p class="err"></p></div>
+        <label class="check"><input type="checkbox" id="f-factura"> Necesito la factura con RUC (empresa o profesional)</label>
+        <div id="ruc-box" hidden>
+          <div class="two">
+            <div class="field"><label for="f-ruc">RUC</label><input class="input" id="f-ruc" inputmode="numeric" maxlength="13" placeholder="13 dígitos"><p class="err"></p></div>
+            <div class="field"><label for="f-razon">Razón social</label><input class="input" id="f-razon" autocomplete="organization"><p class="err"></p></div>
+          </div>
+        </div>
+        <div class="actions"><a class="btn btn-outline" href="index.html#certificaciones">Volver al catálogo</a><button class="btn btn-primary" type="submit">Continuar al pago</button></div>
+      </form>
+
+      <!-- Paso 3 -->
+      <form class="panel" data-step="3" id="pay-form" novalidate hidden>
+        <h2 tabindex="-1">Pago</h2><p class="sub">Total a pagar: <strong id="pay-total"></strong> (dólares, IVA incluido si aplica)</p>
+        <fieldset class="pick">
+          <legend>¿Cómo quieres pagar?</legend>
+          <input type="radio" name="pay" id="p-card" value="card" checked><label for="p-card">Tarjeta<small>Crédito o débito</small></label>
+          <input type="radio" name="pay" id="p-transfer" value="transfer"><label for="p-transfer">Transferencia<small>Banco local</small></label>
+          <input type="radio" name="pay" id="p-payphone" value="payphone"><label for="p-payphone">Payphone<small>Enlace al celular</small></label>
+        </fieldset>
+
+        <div data-method="card">
+          <div class="field"><label for="f-holder">Nombre en la tarjeta</label><input class="input" id="f-holder" autocomplete="cc-name"><p class="err"></p></div>
+          <div class="field"><label for="f-card">Número de tarjeta</label><input class="input" id="f-card" type="text" placeholder="0000 0000 0000 0000" inputmode="numeric" autocomplete="cc-number"><p class="help">Para probar usa 4242 4242 4242 4242.</p><p class="err"></p></div>
+          <div class="two">
+            <div class="field"><label for="f-exp">Vence (MM/AA)</label><input class="input" id="f-exp" type="text" placeholder="MM/AA" inputmode="numeric" autocomplete="cc-exp"><p class="err"></p></div>
+            <div class="field"><label for="f-cvv">CVV</label><input class="input" id="f-cvv" type="text" placeholder="123" inputmode="numeric" maxlength="4" autocomplete="cc-csc"><p class="help">3 o 4 números del reverso.</p><p class="err"></p></div>
+          </div>
+        </div>
+        <div data-method="transfer" hidden>
+          <div class="bank">
+            <strong>Datos para la transferencia</strong>
+            <!-- TODO: confirmar con EducaLab los datos bancarios reales -->
+            <dl><dt>Banco</dt><dd>Por confirmar con EducaLab</dd><dt>Tipo</dt><dd>Cuenta corriente</dd><dt>Número</dt><dd>Por confirmar</dd><dt>Titular</dt><dd>EducaLab</dd><dt>Valor</dt><dd id="confirm-total-tr"></dd></dl>
+          </div>
+          <p class="hint">Al confirmar reservamos tu cupo. Luego envías el comprobante por WhatsApp y activamos tu acceso.</p>
+        </div>
+        <div data-method="payphone" hidden>
+          <div class="field"><label for="f-pp-phone">Celular para recibir el enlace de Payphone</label><input class="input" id="f-pp-phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="0991234567"><p class="err"></p></div>
+        </div>
+
+        <div class="field"><label class="check" for="f-terms"><input type="checkbox" id="f-terms"> <span>Acepto las <a class="link" href="legal.html#condiciones" target="_blank" rel="noopener">condiciones de compra<span class="sr-only"> (se abre en otra pestaña)</span></a> y la <a class="link" href="legal.html#privacidad" target="_blank" rel="noopener">política de privacidad<span class="sr-only"> (se abre en otra pestaña)</span></a>.</span></label><p class="err"></p></div>
+        <p class="simulated" role="note"><strong>Pago simulado.</strong> Este es un prototipo académico: no se procesa ningún cobro ni se guardan tus datos.</p>
+        <div class="actions"><button class="btn btn-outline" id="back-2" type="button">Volver a mis datos</button><button class="btn btn-primary" id="confirm" type="submit"><span id="confirm-label">Pagar</span>&nbsp;<span id="confirm-total"></span></button></div>
+        <p class="sr-only" id="pay-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <!-- Paso 4 -->
+      <section class="panel done-box" data-step="4" hidden aria-labelledby="done-title">
         <svg class="big" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#1D7A43"/><path d="m7 12.5 3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h2>¡Inscripción confirmada!</h2>
-        <p style="margin:10px 0 20px"><span id="done-name"></span>, ya tienes acceso a <strong id="done-course"></strong>. Enviamos los datos de ingreso a <strong id="done-mail"></strong>.</p>
-        <a class="btn btn-primary" href="login.html">Ir a mi aula</a>
+        <h2 id="done-title" tabindex="-1"></h2>
+        <span class="order" id="done-order"></span>
+        <p id="done-text" style="margin-bottom:16px"></p>
+        <p style="font-weight:700;margin-bottom:6px">Siguientes pasos</p>
+        <ol id="done-steps"></ol>
+        <div class="actions"><a class="btn btn-primary" id="done-aula" href="login.html">Ir a mi aula</a><a class="btn btn-wa" id="done-wa" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a></div>
+        <p class="hint">Pago simulado: no se realizó ningún cobro.</p>
       </section>
     </div>
-    <aside class="panel summary" aria-label="Resumen de compra">
-      <h2>Resumen</h2>
-      <div class="item"><div class="thumb" id="sum-thumb"></div><div><strong id="sum-name"></strong><div style="font-size:13px;color:var(--muted)" id="sum-facts"></div></div></div>
-      <div class="row"><span>Certificación</span><span id="sum-price"></span></div>
-      <div class="row" id="sum-disc-row" hidden><span>Cupón</span><span id="sum-disc" style="color:var(--or-dk)"></span></div>
+
+    <aside class="panel summary" aria-labelledby="sum-h">
+      <h2 id="sum-h">Resumen</h2>
+      <div class="item"><div class="thumb" id="sum-thumb" aria-hidden="true"></div>
+        <div style="flex:1;min-width:0"><label class="flabel" for="f-course">Certificación</label><select class="input" id="f-course"></select><div class="facts-s" id="sum-facts"></div></div></div>
+      <div class="row"><span>Precio</span><span id="sum-price"></span></div>
+      <div class="row disc" id="sum-disc-row" hidden><span id="sum-disc-label"></span><span id="sum-disc"></span></div>
       <div class="row total"><span>Total</span><span id="sum-total"></span></div>
-      <div class="coupon"><label class="sr-only" for="coupon">Cupón</label><input class="input" id="coupon" placeholder="Cupón (prueba PRIMERA10)"><button class="btn btn-outline btn-sm" id="coupon-btn" type="button">Aplicar</button></div>
-      <p id="coupon-msg" style="font-size:13px;margin-top:6px" role="status"></p>
-      <ul class="includes"><li>Acceso inmediato</li><li>Certificado con código QR</li><li>Factura electrónica</li></ul>
-      <p class="secure">Tus datos están protegidos. ¿Dudas? <a class="link" data-wa href="#">Escríbenos por WhatsApp</a></p>
+      <form class="coupon" id="coupon-form" novalidate><label class="sr-only" for="coupon">Cupón de descuento</label><input class="input" id="coupon" placeholder="¿Tienes un cupón?" autocapitalize="characters" spellcheck="false"><button class="btn btn-outline btn-sm" type="submit">Aplicar</button></form>
+      <p id="coupon-msg" role="status" aria-live="polite"></p>
+      <button class="linkbtn link" id="coupon-remove" type="button" hidden style="font-size:13px;padding:8px 0">Quitar cupón</button>
+      <p class="hint">Primera compra: prueba el cupón <code>PRIMERA10</code>.</p>
+      <ul class="includes"><li>Acceso inmediato al aula</li><li>Certificado con código QR</li><li>Factura electrónica</li></ul>
+      <p class="secure"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1D7A43" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5zm-1.5 15.5-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4z"/></svg>Conexión segura · ¿Dudas? <a class="link" id="help-wa" href="#" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></p>
     </aside>
+  </div>
   </div>
 </main>
 <footer class="site"><div class="wrap">
-  <div><h4>EducaLab.ec</h4><ul><li>Quito, Ecuador</li><li><a href="tel:+593978893727">+593 97 889 3727</a></li><li><a href="mailto:cursos@educalab.ec">cursos@educalab.ec</a></li></ul></div>
-  <div><h4>Certificaciones</h4><ul><li><a href="inscripcion.html?curso=excel">Excel aplicado a negocios</a></li><li><a href="inscripcion.html?curso=web">Diseño y programación web</a></li><li><a href="inscripcion.html?curso=riesgos">Riesgos laborales</a></li></ul></div>
-  <div><h4>Empresa</h4><ul><li><a href="#">¿Quiénes somos?</a></li><li><a href="#">Condiciones</a></li><li><a href="#">Política de privacidad</a></li></ul></div>
-  <div><h4>Ayuda</h4><ul><li><a data-wa href="#">Escríbenos por WhatsApp</a></li><li><a href="index.html#verificar">Verificar un certificado</a></li></ul></div>
-</div><p class="copy">Prototipo académico de HCI, EPN. <span id="year"></span></p></footer>
-<a class="fab" data-wa href="#" aria-label="Escribir por WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+  <div><h2 class="fh">EducaLab.ec</h2><ul><li>Quito, Ecuador</li><li><a href="tel:+593978893727">+593 97 889 3727</a></li><li><a href="mailto:cursos@educalab.ec">cursos@educalab.ec</a></li><li><a data-wa href="#">WhatsApp</a></li></ul></div>
+  <div><h2 class="fh">Certificaciones</h2><ul><li><a href="inscripcion.html?curso=excel">Excel aplicado a negocios</a></li><li><a href="inscripcion.html?curso=web">Diseño y programación web</a></li><li><a href="inscripcion.html?curso=riesgos">Riesgos laborales</a></li><li><a href="index.html#certificaciones">Ver todas</a></li></ul>
+    <h2 class="fh second">Empresa</h2><ul><li><a href="nosotros.html">¿Quiénes somos?</a></li><li><a href="instructores.html">Instructores</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="cursos.html">Lista de cursos</a></li></ul></div>
+  <div><h2 class="fh">Legal</h2><ul><li><a href="legal.html#condiciones">Condiciones de compra</a></li><li><a href="legal.html#privacidad">Política de privacidad</a></li><li><a href="legal.html#pagos">Pagos y facturación</a></li><li><a href="legal.html#terminos">Términos y condiciones</a></li><li><a href="legal.html#seguridad">Política de seguridad</a></li></ul></div>
+  <div><h2 class="fh">Ayuda</h2><ul><li><a data-wa href="#">Escríbenos por WhatsApp</a></li><li><a href="index.html#verificar">Verificar un certificado</a></li><li><a href="index.html#preguntas">Preguntas frecuentes</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+</div><p class="copy">Prototipo académico de Interacción Humano-Computador, EPN. <span id="year"></span></p></footer>
+<aside class="quick" aria-label="Atajos"><a class="fab" data-wa="Hola EducaLab, tengo dudas sobre mi inscripción." href="#" aria-label="Escribir por WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a></aside>
 <script src="assets/app.js"></script>
 </body></html>
