@@ -4,26 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iniciar sesión | EducaLab.ec</title>
-<meta name="description" content="Accede a tus cursos y certificados.">
+<meta name="description" content="Accede a tu aula virtual de EducaLab.ec para ver tus cursos, tu progreso y tus certificados con código QR.">
+<meta name="theme-color" content="#C2501A">
+<!-- TODO: al publicar, cambia og:url y og:image por las URL absolutas de GitHub Pages. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+<meta property="og:site_name" content="EducaLab.ec">
+<meta property="og:title" content="Iniciar sesión | EducaLab.ec">
+<meta property="og:description" content="Tus cursos, tu progreso y tus certificados en un solo lugar.">
+<meta property="og:url" content="https://educalab.ec/login.html">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2501A'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23fff' text-anchor='middle'%3EEL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head><body>
-<main class="auth">
+<main class="auth" id="main">
   <div class="form">
-    <a class="logo" href="index.html">EDUCA<span>LAB</span><small>.EC</small></a>
-    <h1 style="font-size:28px;margin:18px 0 8px">Inicia sesión en tu cuenta</h1>
-    <button class="btn gbtn" type="button"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23 12.3c0-.8-.1-1.6-.2-2.3H12v4.4h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.5z"/><path fill="#34A853" d="M12 23.5c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.8v3A11.5 11.5 0 0 0 12 23.5z"/><path fill="#FBBC05" d="M5.6 14.2a6.9 6.9 0 0 1 0-4.4v-3H1.8a11.5 11.5 0 0 0 0 10.4z"/><path fill="#EA4335" d="M12 5.1c1.7 0 3.2.6 4.4 1.7l3.3-3.3A11.5 11.5 0 0 0 1.8 6.8l3.8 3C6.5 7.1 9 5.1 12 5.1z"/></svg>Continuar con Google</button>
+    <a class="logo" href="index.html" aria-label="EducaLab.ec, inicio"><svg class="cap" viewBox="0 0 52 14" aria-hidden="true"><path d="M26 0 52 7 26 14 0 7z" fill="#333"/></svg><span class="lt">EDUCA<span>LAB</span><small>.EC</small></span></a>
+    <h1>Inicia sesión en tu cuenta</h1>
+    <button class="btn gbtn" id="google-btn" type="button"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23 12.3c0-.8-.1-1.6-.2-2.3H12v4.4h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.5z"/><path fill="#34A853" d="M12 23.5c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.8v3A11.5 11.5 0 0 0 12 23.5z"/><path fill="#FBBC05" d="M5.6 14.2a6.9 6.9 0 0 1 0-4.4v-3H1.8a11.5 11.5 0 0 0 0 10.4z"/><path fill="#EA4335" d="M12 5.1c1.7 0 3.2.6 4.4 1.7l3.3-3.3A11.5 11.5 0 0 0 1.8 6.8l3.8 3C6.5 7.1 9 5.1 12 5.1z"/></svg>Continuar con Google</button>
     <p class="divider">o con tu correo</p>
     <form id="login-form" novalidate>
-      <div class="field"><label for="l-user">Correo electrónico o usuario</label><input class="input" id="l-user" autocomplete="username" placeholder="tucorreo@ejemplo.com"></div>
-      <div class="field"><label for="l-pass">Contraseña</label><input class="input" id="l-pass" type="password" autocomplete="current-password"></div>
-      <p class="right" style="margin-bottom:16px"><a class="link" href="#">¿Olvidaste tu contraseña?</a></p>
+      <div class="field"><label for="l-user">Correo electrónico o nombre de usuario</label><input class="input" id="l-user" autocomplete="username" placeholder="tucorreo@ejemplo.com" autocapitalize="none" spellcheck="false" required><p class="err"></p></div>
+      <div class="field"><label for="l-pass">Contraseña</label>
+        <div class="pwd"><input class="input" id="l-pass" type="password" autocomplete="current-password" required><button class="toggle" id="pwd-toggle" type="button" aria-pressed="false" aria-controls="l-pass">Mostrar<span class="sr-only"> contraseña</span></button></div>
+        <p class="caps" id="caps" hidden>Bloq Mayús está activado.</p><p class="err"></p></div>
+      <p class="right" style="margin-bottom:16px"><button class="linkbtn link" id="forgot" type="button" style="padding:8px 0">¿Olvidaste tu contraseña?</button></p>
+      <!-- reCAPTCHA (simulado): solo aparece tras 3 intentos fallidos -->
+      <div class="captcha" id="captcha" hidden><p>Por seguridad, después de varios intentos te pedimos esta verificación.</p><label class="check"><input type="checkbox" id="captcha-ok"> No soy un robot</label></div>
       <button class="btn btn-primary" style="width:100%" type="submit">Acceder</button>
-      <div class="result" id="login-msg" role="status"></div>
+      <div class="result" id="login-msg" role="status" aria-live="polite"></div>
+      <p class="hint">Cuenta de prueba: <code>demo@educalab.ec</code> / <code>Demo2026</code></p>
     </form>
-    <p class="center">¿No tienes cuenta? <a class="link" href="index.html#certificaciones">Regístrate al inscribirte</a></p>
+    <p class="center">¿Aún no tienes cuenta? <a class="link" href="index.html#certificaciones">Se crea al inscribirte</a></p>
+    <a class="link back" href="index.html">← Volver al inicio</a>
   </div>
   <div class="brand"><h2>Continúa donde te quedaste</h2><p>Tu progreso, tus certificados y tus códigos QR en un solo lugar.</p></div>
 </main>
